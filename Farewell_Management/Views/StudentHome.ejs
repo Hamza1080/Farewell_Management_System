@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" width="100px" alt="Logo" float="left">
+            <ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul>
+            <a href="/"><button class="Login" align="right">Logout</button></a>
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- Main content -->
+<div class="container">
+    <h1>Student Home</h1>
+
+<div class="container">
+    <h1>Menu</h1>
+
+    <table class="budget-table">
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% menu.forEach(item => { %>
+                <tr>
+                    <td><%= item.itemid %></td>
+                    <td><%= item.studentid %></td>
+                    <td><%= item.name %></td>
+                    <td><%= item.description %></td>
+                    <td><%= item.votes %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container">
+    <h1>Performance</h1>
+
+    <table class="budget-table">
+        <thead>
+            <tr>
+                <th>Performance ID</th>
+                <th>Duration</th>
+                <th>Student ID</th>
+                <th>Team ID</th>
+                <th>Type</th>
+                <th>Requirement</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% performance.forEach(item => { %>
+                <tr>
+                    <td><%= item.performanceid %></td>
+                    <td><%= item.duration %></td>
+                    <td><%= item.studentid %></td>
+                    <td><%= item.teamid %></td>
+                    <td><%= item.type %></td>
+                    <td><%= item.requirement %></td>
+                    <td><%= item.votes %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+</div>
+
+<div class="form-container">
+<form action="/increment-vote" method="post">
+    <label for="itemId">Item ID:</label>
+    <br>
+    <input type="number" id="itemId" name="itemId" required>
+    <br>
+    <input type="submit" value="Increment Vote">
+</form>
+
+<form action="/increment-vote-Performance" method="post">
+    <label for="itemId">Performance Id</label>
+    <br>
+    <input type="number" id="itemId" name="itemId" required>
+    <br>
+<input type="submit" value="Increment Vote" style="margin-right: 200px;">
+
+</form>
+
+</div>
+
+    <div class="form-container">
+        <!-- Add menu item form -->
+                <form action="/add-menu-itemStu" method="post">
+            <h3>Suggest a Menu Item</h3>
+            <label for="menuItemId">Item ID:</label>
+            <input type="number" id="menuItemId" name="menuItemId" required><br>
+    
+            <label for="menuStudentId">Student ID:</label>
+            <input type="number" id="menuStudentId" name="menuStudentId" required><br>
+    
+            <label for="menuName">Name:</label>
+            <input type="text" id="menuName" name="menuName" required><br>
+    
+            <label for="menuDescription">Description:</label>
+            <input type="text" id="menuDescription" name="menuDescription" required><br>
+    
+            <label for="menuVotes">Votes:</label>
+            <input type="number" id="menuVotes" name="menuVotes" required><br>
+    
+            <input type="submit" value="Add Menu Item">
+        </form>
+
+        <!-- Add performance item form -->
+       <form action="/add-performance-itemStu" method="post" class="form-inline">
+    <h3>Suggest Performance Record</h3>
+    <label for="performanceId">Performance ID:</label>
+    <input type="number" id="performanceId" name="performanceId" required><br>
+    
+    <label for="performanceDuration">Duration:</label>
+    <input type="text" id="performanceDuration" name="duration" required><br> <!-- changed name attribute -->
+    
+    <label for="performanceStudentId">Student ID:</label>
+    <input type="number" id="performanceStudentId" name="studentId" required><br> <!-- changed name attribute -->
+    
+    <label for="performanceTeamId">Team ID:</label>
+    <input type="number" id="performanceTeamId" name="teamId" required><br> <!-- changed name attribute -->
+    
+    <label for="performanceType">Type:</label>
+    <input type="text" id="performanceType" name="type" required><br> <!-- changed name attribute -->
+    
+    <label for="performanceRequirement">Requirement:</label>
+    <input type="text" id="performanceRequirement" name="requirement" required><br> <!-- changed name attribute -->
+    
+    <label for="performanceVotes">Votes:</label>
+    <input type="number" id="performanceVotes" name="votes" required><br> <!-- changed name attribute -->
+    
+    <input type="submit" value="Add Performance Record">
+</form>
+
+    </div>
+
+
+
+
+        </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" width="100px" alt="Logo" float="left">
+            <ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul>
+            <a href="/"><button class="Login" align="right">Logout</button></a>
+        </nav>
+    </div>
+    <!-- Header -->
+
+<div class="container">
+    <h1>Task Table</h1>
+    <table class="task-table">
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Status</th>
+                <th>Team ID</th>
+                <th>Deadline</th>
+                <th>Organiser ID</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% tasks.forEach(task => { %>
+                <tr>
+                    <td><%= task.taskid %></td>
+                    <td><%= task.status %></td>
+                    <td><%= task.teamid %></td>
+                    <td><%= task.deadline %></td>
+                    <td><%= task.organiserid %></td>
+                    <td><%= task.description %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+
+
+     <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>

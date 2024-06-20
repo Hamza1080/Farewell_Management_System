@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" ; width="100px" float="left">
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+            </ul>
+            <a href="\"><button href="" class="Login" align>Logout</button></a>
+        </nav>
+    </div>
+    <h1>Budget Master Home</h1>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <!-- Header -->
+    <body>
+        <table id="budgetTable">
+            <thead>
+                <tr>
+                    <th>Budget ID</th>
+                    <th>Amount Allocated</th>
+                    <th>Amount Spent</th>
+                    <th>Category Name</th>
+                    <th>Budget Master ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be inserted here -->
+                <% for (let i = 0; i < budgetData.length; i++) { %>
+                <tr>
+                    <td><%= budgetData[i].budgetid %></td>
+                    <td><%= budgetData[i].amountallocated %></td>
+                    <td><%= budgetData[i].amountspent %></td>
+                    <td><%= budgetData[i].categoryname %></td>
+                    <td><%= budgetData[i].budgetmasterid %></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </body>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact-us.html">Contact</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Footer -->
+</body>
+</html>

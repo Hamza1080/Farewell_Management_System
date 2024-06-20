@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Family Member</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" width="100px" alt="Logo" float="left">
+            <ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul>
+            <a href="/"><button class="Login" align="right">Logout</button></a>
+        </nav>
+    </div>
+    <!-- Header -->
+    <!-- Main content -->
+
+    <h1>Add Family Member</h1>
+    <br>
+    <form action="/add-family-member" method="post">
+
+        <label for="teacherID">Teacher ID:</label>
+        <input type="number" id="teacherID" name="teacherID" required>
+
+        <label for="relationship">Relationship:</label>
+        <input type="text" id="relationship" name="relationship" required>
+
+        <!-- Add input field for family member ID -->
+        <label for="familyMemberID">Family Member ID:</label>
+        <input type="number" id="familyMemberID" name="familyMemberID" required>
+        <br>
+        <input type="submit" value="Submit" style="padding: 8px 16px; margin-right: 10px;">
+    </form>
+
+
+    <a href="/announcement"><button class="announcement-button">View Annoucement</button></a>
+
+    <!-- Main content -->
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+        <!-- Footer -->
+</body>
+</html>

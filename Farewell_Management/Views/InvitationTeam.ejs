@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvitationTeam</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" ; width="100px" float="left">
+            <ul>
+                <li><a href="/Task">View Task</a></li>
+                <li><a href="/ViewBudget">View Budget</a></li>
+
+                <a href="/"><button class="Login" >Logout</button></a>
+                </li>
+            </ul>
+        </nav>
+
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- Main content -->
+<div class="container">
+    <h1>Invitation</h1>
+
+    <table class="budget-table">
+        <thead>
+            <tr>
+                <th>Invitation ID</th>
+                <th>Method</th>
+                <th>Teacher ID</th>
+                <th>Student ID</th>
+                <th>Status</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Team ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% invitations.forEach(item => { %>
+                <tr>
+                    <td><%= item.invitationid %></td>
+                    <td><%= item.method %></td>
+                    <td><%= item.teacherid %></td>
+                    <td><%= item.studentid %></td>
+                    <td><%= item.status %></td>
+                    <td><%= item.sender %></td>
+                    <td><%= item.recipient %></td>
+                    <td><%= item.teamid %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+
+        </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>

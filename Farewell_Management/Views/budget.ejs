@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Table</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" width="100px" alt="Logo" float="left">
+            <ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul>
+            <a href="/"><button class="Login" align="right">Logout</button></a>
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Budget Table</h1>
+        <table class="budget-table">
+            <thead>
+                <tr>
+                    <th>Budget ID</th>
+                    <th>Amount Allocated</th>
+                    <th>Amount Spent</th>
+                    <th>Category Name</th>
+                    <th>Budget Master ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% budget.forEach(row => { %>
+                    <tr>
+                        <td><%= row.budgetid %></td>
+                        <td><%= row.amountallocated %></td>
+                        <td><%= row.amountspent %></td>
+                        <td><%= row.categoryname %></td>
+                        <td><%= row.budgetmasterid %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+
+        </div>
+                <form action="/submit-budget-master-amountupdate" method="post" >
+                    <label for="budgetMasterID">Enter Budget Master ID:</label>
+                    <input type="text" id="budgetMasterID" name="budgetMasterID" required>
+
+                    <label for="amountSpent">Enter Amount Spent:</label>
+                    <input type="number" id="amountSpent" name="amountSpent" required>
+
+                    <input type="submit" value="Update Amount Spent" style="padding: 8px 16px; margin-right: 10px;">
+                </form>
+    <!-- Main content -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,880 @@
+*{
+
+/*	padding: %;*/
+	box-sizing: border-box;
+	overflow-x:inherit;
+	font-family: sans-serif;
+}
+
+
+
+.header{
+
+	padding-top: 10px;
+	align-items: center;
+}
+
+/*Login button */
+
+.Login
+{
+
+float: right;
+align-content: right;		
+width: 100px;
+height: 40px;
+margin-left: 650px;
+background-color: white; 
+color: black;
+font-size: medium;
+
+}
+
+.Login:hover{
+scale:1.03;
+font-size: medium;
+font-weight: 500;
+cursor: pointer;
+color: #FF721B;
+
+}
+
+/*login button end*/
+
+
+/*navigation bar*/
+nav{
+	padding-right: 100px
+	padding-left: 100px;
+	border-color: black;
+	border-bottom: solid ;
+	border
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li{
+	display: inline-block;
+/*	list-style: none;*/
+
+}
+		
+nav ul li a{
+
+	text-decoration: none;
+	padding: 10px 10px;
+
+	color: #000000;
+}
+
+nav ul li a:hover{
+	background-color: #FF721B;
+color: white;
+border-color: black;
+padding: 10px 10px
+
+
+}
+
+/*header ends*/
+
+/*banner*/
+
+.banner{
+	align-self: : center center;
+	background-color: #FF721B;
+	background-image: url(ban.png);
+	background-size: cover;
+	background-position: 69%;
+	border-radius: 10px;
+	top:100px;
+	width: 100%;
+	height: 450px;
+
+}
+
+
+.banner h1{
+	margin-left: 50px;
+	color:white;
+	padding-top: 100px;
+	margin-left: 50px;
+	font-size: 65px;
+	font-weight: bold;
+
+}
+
+.bannermid {
+	align-self: : center center;
+	background-color: #FF721B;
+	background-image: url(Alvida.png);
+	background-size: cover;
+	background-position: 69%;
+	border-radius: 10px;
+	top: 100px;
+	width: 100%;
+	height: 450px;
+}
+
+
+	.bannermid h1 {
+		margin-left: 50px;
+		color: white;
+		padding-top: 100px;
+		margin-left: 50px;
+		font-size: 65px;
+		font-weight: bold;
+	}
+
+#btn{
+	width: 130px;
+	height: 40px;
+	background-color: #FF721B;
+	letter-spacing: 1.5px;
+	margin-left: 40px;
+	font-weight: 1000px;
+	color: white;
+	border-radius: 5px;
+	border: solid;
+	border-color: black;
+}
+
+#btn:hover{
+	scale:1.1;
+}
+
+
+#btn:hover{
+	color: black;
+	cursor: pointer;
+		font-weight: 10000;
+}
+
+/*banner ends*/
+
+
+/*Homepage */
+
+.top-selling{
+	margin-top: 50px;
+	background-color: black;
+	width: 100%;
+	height: 75px;
+	border-radius: 5px; 
+}
+
+
+.top-selling h1{ 
+	padding-top: 20px;
+	color :white;
+	text-align:center;
+}
+
+.all-products	{
+	margin-top: 30px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: orange;
+
+}	
+
+.product{
+	background-color: black;
+	overflow: hidden;
+/*	border: solid;*/
+	border-opacity: 10%;
+	background: white;/*
+	color: #FF721B;*/
+	color: black;
+	text-align: center;
+/*	flex-direction: column;*/
+	align-items: center;
+	/*border-radius: px;*/
+	margin: 10px;
+	width: 240px; height: 380px	;
+
+}
+
+h2{
+	text-align: center;
+	margin-bottom: : 5rem;
+	font-size: 4rem 
+}
+
+.product:hover img{
+	scale  :1.04;
+
+}
+.product:hover {
+	box-shadow:  2px 2px 2px blue;
+}
+
+
+
+
+.product p{
+	font-weight: 900px;
+	font-size: medium;
+/*	background-color: orange;*/
+
+}
+.product h4{
+	padding-top: 500px	
+	font-weight: 1000px;
+	font-size: large;
+	/*background-color: orange;*/
+
+}
+
+.product-info{
+	background-color: white;
+
+}
+
+#product-btn 
+{
+	background-color: black;
+	size: large;
+	font-size: 13px;
+	cursor: pointer;
+    top:50%;
+    size: 12px
+    font-style: bold;	
+	width: 130px;
+	height: 40px;
+	background-color: black;
+	letter-spacing: 1.5px;
+	font-weight: 100px;
+	color: white;
+	border-radius: 5px;
+	border: solid;
+	border-color: black;
+
+
+
+}
+
+#product-btn:hover
+{
+/*	color: #ff721B*/
+	scale : 1.05;
+	background-color: #ff721B;
+	font-weight: 600;
+
+}
+
+#product-btn a{
+	color:white ;
+	font-style: bold;
+
+
+}
+
+.products{
+	border:solid;
+	border-color: black
+	border-radius: 30px;
+}
+
+
+
+
+.bef-footer{
+		border:solid;
+		border-color: black;
+	background-color: #FF721B;
+	background-size: cover;
+	border-radius: 10px;
+	width: 100%;
+	height: 350px;
+
+}				
+.bef-footer h2{
+
+	margin-left: 50px;
+	color:white;
+	padding-top: 60px;
+	margin-left: 50px;
+	font-size: 70px;
+	font-weight: bold;
+
+}
+
+#bef-btn
+		{
+	margin-left: 500px;
+	background-color: black;
+	color:white;
+	size: large;
+	color: white;
+	font-weight: bold;
+	align-content: center center;
+	width: 200px;
+	height: 50px;
+		font-weight: 1000px;	
+		border-radius: 45px;	
+		}
+
+
+#bef-btn:hover{
+	scale:1.02;
+	font-size: 15px;
+	background-color: #FF721B;
+	cursor: pointer;
+}
+/*homepage ends*/
+
+/*footer*/
+
+
+	.footer{
+
+
+		display: flex;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 100%;
+		margin-top: 30px;
+		background : black ;
+		color: white;
+
+	}
+
+
+
+	.footer div{
+		text-align: center;
+		margin-left: 30px;
+		margin-right: 30px;	
+	}
+
+.col2{
+	flex-grow: 3;
+}
+
+}
+
+
+.footer div h3{
+	font-size: large;
+	font-weight: 400px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+				
+.col1 a{
+	text-decoration: none;
+	color: #efefef;
+	margin-bottom: 20px;
+	display: block;
+}
+.col1 a:hover{
+scale:1.1;
+color : #FF721B;
+}			
+
+/*footer end*/
+
+
+
+
+
+form input{
+	width: 300px;
+	height: 45px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+
+}	
+
+form button{
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+form button:hover{
+	color: #FF721B;
+	scale:1.1;
+	cursor: pointer;
+}
+
+/*login/sign in  page mixture*/
+
+.Sign-Up{
+	color: white;
+	width: 360px;
+	height: 750px;
+	margin: auto;
+	background-color: black;
+	border-radius: 3px;
+
+}
+
+.Sign-Up h1{
+
+	text-align: center;
+	padding-top: 15px;
+
+}
+.Sign-Up h4{
+	text-align: center;
+}
+
+
+.Sign-In{
+
+	color: white;
+	width: 360px;
+	height: 400px;
+	margin: auto;
+	background-color: black;
+	border-radius: 3px;
+
+}
+
+.Sign-In h1{
+
+	text-align: center;
+	padding-top: 10px;
+
+}
+.Sign-In h4{
+	text-align: center;
+}
+
+.s-upform {
+	background-color: black;
+	color: white;
+	width: 300px;
+	margin-left: 20px;
+	height: 500px
+}
+
+.s-upform label{
+
+	margin-bottom: 1px;
+	background-color: black;
+	color: white;
+	display: flex;
+	margin-top: -4px;
+}
+
+.s-inform {
+	background-color: black;
+	color: white;
+	width: 300px;
+	margin-left: 20px;
+	height: 220px
+}
+
+.s-inform label {
+		margin-bottom: 1px;
+		background-color: black;
+		color: white;
+		display: flex;
+		margin-top: -4px;
+}
+
+.Sign-Up p{
+margin-left: 20px;
+margin-top: -4px;
+color: white;
+}
+
+.Sign-In p{
+margin-left: 20px;
+color: white;
+}
+
+
+.back {
+	margin-top: 10px;
+	width: 100%;
+	height: 850px;
+	background-image: url(signback.png);
+	background-size: cover; /* Ensure the background image covers the entire div */
+	background-repeat: no-repeat; /* Prevent the background image from repeating */
+	padding: 2%;
+}
+
+.back-signin {
+	margin-top: 10px;
+	width: 100%;
+	height: 500px;
+	background-image: url(signback.png);
+	background-size: cover; /* Ensure the background image covers the entire div */
+	background-repeat: no-repeat; /* Prevent the background image from repeating */
+	padding: 2%;
+}
+
+ input[type="button"]{
+ 	width: 320px;
+ 	height: 35px;
+ 	background-color: #FF721B;
+ 	margin-top: 10px;
+ 	border :solid;
+ 	border-color: #FF721B;
+ 	color:black;
+ }
+
+
+input[type="button"]:hover{
+	scale:1.02;
+	background-color: black;
+	color:#FF721B;
+	cursor:pointer;
+
+}
+
+input[type="submit"] {
+	width: 320px;
+	height: 35px;
+	background-color: #FF721B;
+	margin-top: 10px;
+	border: solid;
+	border-color: #FF721B;
+	color: black;
+}
+
+
+	input[type="submit"]:hover {
+		scale: 1.02;
+		background-color: black;
+		color: #FF721B;
+		cursor: pointer;
+	}
+
+/*login/sign up end*/
+
+
+/*contacu us page*/
+.contact-back{
+
+	margin-top: 20px;
+	margin-bottom: 130px;
+/*	background-color: black;*/
+
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	/*padding: 20px 100px;*/
+	color:white;
+
+}	
+
+.contact-back:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 700px;
+	background-color: #FF721B;
+	background-size: cover;
+	z-index: -1;
+	filter: blur(5px);
+}
+
+.contact-box{
+	width: 850px;
+	height: 600px;
+/*	background-color: black;*/
+	display: grid;
+	 grid-template-columns: repeat(2,1fr);
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
+}
+
+.left{
+	margin-top: 170px; 
+	height: 70%;
+	background: url(Contact.jpg);
+	background-size: cover;
+	border-radius: 50px;
+	border:solid;
+	border-color: black;
+	align-items: left;
+}
+
+.right{
+	margin-top: 80px;
+	margin-left: 20px; 
+
+
+}
+
+.right h2{
+	position: relative;
+	font-weight: 400px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.right h2:after{
+	content: '  ' ;
+	position: fixed;
+	left: 50%;
+	bottom: 0;
+	height: 4px;
+	width: 100px;
+	border-radius: 2px;
+	background-color: white;
+	height: 4px;
+	width: 40px;
+	border-radius: 2px;
+	border-color: white;
+/*	background-color: white;
+	color: black;
+*/
+
+}
+
+.field{
+	width: 100%;
+/*	padding: 10px 20px;*/
+	outline: none;
+	background-color: white;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+
+
+/*Contact us page button*/
+#c-submit{
+ 	width: 250px;
+ 	height: 35px;
+ 	background-color: black;
+ 	margin-top: 30px;
+ 	border-radius: 30px;
+ 	color:white;
+ 	font-size: 16px; 
+ }
+
+#c-submit:hover{
+	scale:0.96;
+	background-color: ;
+	color: #FF721B;
+	cursor:pointer;
+	border-radius: 40px;
+
+}
+/*contact us end*/
+
+
+
+/*bootstap checkout backgroud*/
+/*checkout page*/
+.page{
+	margin-top: 20px;
+background-color:#FF721B; 
+
+}
+
+#check{
+	background-color: #FF721B;
+	align-content: center;
+	size: 80px;
+
+}
+/*checkout page end*/
+
+
+
+/*about us page*/
+.about-section{
+
+	margin-top: 20px;
+	background: url(Aboutp.jpg) no-repeat left;
+	background-size: 55%; 
+	overflow: hidden;
+	padding: 100px 0;
+	background-color: black;
+}
+
+.inner-box{
+	width: 65%;
+	float: right;
+	background-color: #FF721B;
+	padding:150px;
+}
+
+.inner-box h1{
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+	color: white;
+}
+.about-text{
+	font-size:15px;
+	color:white;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+.skills{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 	18px;
+	color: white;
+}
+
+/*about us page  end*/
+
+/* table*/
+
+
+
+.container {
+	margin: 20px;
+}
+
+.budget-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	.budget-table th,
+	.budget-table td {
+		border: 1px solid #ddd;
+		padding: 8px;
+	}
+
+	.budget-table th {
+		background-color: #f2f2f2;
+	}
+
+.col1,
+.col2,
+.col3 {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.mid {
+	height: 20px;
+}
+/*table ends here*/
+.input-label {
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block; /* Ensures the label is displayed as a block element */
+}
+
+
+
+.announcement-button {
+	background-color: #FF721B;
+	color: black;
+	border: none;
+	padding: 10px 105px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+	.announcement-button:hover {
+		background-color: black; /* Darker shade of orange on hover */
+		color: #FF721B
+	}
+
+.task-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	.task-table th, .task-table td {
+		padding: 8px;
+		border: 1px solid #ddd;
+	}
+
+	.task-table th {
+		background-color: #f2f2f2;
+		text-align: left;
+	}
+
+	.task-table tbody tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+
+	.task-table tbody tr:hover {
+		background-color: #f2f2f2;
+	}
+
+
+.form-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-inline {
+	width: 45%; /* Adjust as needed */
+}
+
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px; /* Adjust as needed */
+}
+
+.left-container, .right-container {
+	width: 48%; /* Adjust as needed */
+}
+
+.left-container {
+	background-color: #f0f0f0; /* Example background color */
+	padding: 20px;
+}
+
+.right-container {
+	background-color: #f9f9f9; /* Example background color */
+	padding: 20px;
+}
+
+
+
+/* Styling for testimonials */
+.testimonials-container {
+	margin-top: 40px;
+}
+
+.testimonial {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+	.testimonial p {
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+
+.author {
+	font-weight: bold;
+}
+

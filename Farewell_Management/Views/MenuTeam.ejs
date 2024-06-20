@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Team</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" ; width="100px" float="left">
+            <ul>
+                <li><a href="/Task">View Task</a></li>
+                <li><a href="/ViewBudget">View Budget</a></li>
+
+                <a href="/"><button class="Login" >Logout</button></a>
+                </li>
+            </ul>
+        </nav>
+
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Menu</h1>
+
+        <table class="budget-table">
+            <thead>
+                <tr>
+                    <th>Item ID</th>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Votes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% menu.forEach(item => { %>
+                    <tr>
+                        <td><%= item.itemid %></td>
+                        <td><%= item.studentid %></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.description %></td>
+                        <td><%= item.votes %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+
+        </div>
+        <h3>Delete a Record</h3>
+<form action="/delete-menu-item" method="post">
+    <label for="itemId">Item ID:</label>
+    <input type="number" id="itemId" name="itemId" required>
+    <input type="submit" value="Delete Item">
+</form>
+<br>
+<div class="form-container">
+    <form action="/modify-menu-item" method="post" class="form-inline">
+        <h3>Modify Record</h3>
+        <label for="itemId">Item ID:</label>
+        <input type="number" id="itemId" name="itemId" required><br>
+        
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required><br>
+        
+        <label for="itemName">Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br>
+        
+        <label for="itemDescription">Description:</label>
+        <input type="text" id="itemDescription" name="itemDescription" required><br>
+        
+        <label for="votes">Votes:</label>
+        <input type="number" id="votes" name="votes" required><br>
+
+
+        <input type="submit" value="Modify Item">
+    </form>
+
+    <form action="/add-menu-item" method="post" class="form-inline">
+        <h3>    Add a Record</h3>
+        <label for="itemid">Item ID</label>
+        <input type="number" id="itemid" name="itemid" required><br>
+
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required><br>
+        
+        <label for="itemName">Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br>
+        
+        <label for="itemDescription">Description:</label>
+        <input type="text" id="itemDescription" name="itemDescription" required><br>
+        
+        <label for="votes">Votes:</label>
+        <input type="number" id="votes" name="votes" required><br>
+
+
+        <input type="submit" value="Add Item">
+    </form>
+</div>
+
+    <!-- Main content -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>

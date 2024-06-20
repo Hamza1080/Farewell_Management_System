@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Table</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" width="100px" alt="Logo" float="left">
+            <ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul><ul></ul>
+            <a href="/"><button class="Login" align="right">Logout</button></a>
+        </nav>
+    </div>
+    <!-- Header -->
+    <!-- Main content -->
+    <br>
+    <h1>Organiser Home</h1>
+    <br>
+    <form action="/add-announcements" method="post" class="announcement-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required class="input-field">
+
+        <label for="organiserID">Organiser ID:</label>
+        <input type="number" id="organiserID" name="organiserID" required class="input-field">
+
+        <!-- Add password field for verification -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required class="input-field">
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required class="input-field">
+        <br>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" required class="input-field"></textarea>
+        <br />
+        <input type="submit" value="Add Announcement" class="submit-button">
+    </form>
+
+    <a href="/announcement"><button class="announcement-button">View Annoucement</button></a>
+    <a href="/Organiser-Assigntask"><button class="announcement-button">Assign Task</button></a>
+
+
+    <!-- Main content -->
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+        <!-- Footer -->
+</body>
+</html>

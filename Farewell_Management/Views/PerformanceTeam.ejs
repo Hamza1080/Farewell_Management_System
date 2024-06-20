@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Team</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav>
+            <img src="LOGO.png" height="100px" ; width="100px" float="left">
+            <ul>
+                <li><a href="/Task">View Task</a></li>
+                <li><a href="/ViewBudget">View Budget</a></li>
+
+                <a href="/"><button class="Login" >Logout</button></a>
+                </li>
+            </ul>
+        </nav>
+
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Performance</h1>
+
+        <table class="budget-table">
+        <thead>
+            <tr>
+                <th>Performance ID</th>
+                <th>Duration</th>
+                <th>Student ID</th>
+                <th>Team ID</th>
+                <th>Type</th>
+                <th>Requirement</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% performance.forEach(item => { %>
+                <tr>
+                    <td><%= item.performanceid %></td>
+                    <td><%= item.duration %></td>
+                    <td><%= item.studentid %></td>
+                    <td><%= item.teamid %></td>
+                    <td><%= item.type %></td>
+                    <td><%= item.requirement %></td>
+                    <td><%= item.votes %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+        </div>
+<br>
+
+<h3>Delete a Performance Record</h3>
+    <form action="/delete-performance-item" method="post" class="form-inline">
+    <label for="performanceId">Performance ID:</label>
+    <input type="number" id="performanceId" name="performanceId" required>
+    <input type="submit" value="Delete Performance Item">
+</form>
+<br>
+<div class="form-container">
+
+<!-- Add performance item form -->
+
+<form action="/add-performance-item" method="post" class="form-inline">
+    <h3>Add a Performance Record</h3>
+    <br>
+    <label for="performanceId">Performance ID:</label>
+    <input type="number" id="performanceId" name="performanceId" required><br>
+    
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="duration" required><br>
+    
+    <label for="studentId">Student ID:</label>
+    <input type="number" id="studentId" name="studentId" required><br>
+    
+    <label for="teamId">Team ID:</label>
+    <input type="number" id="teamId" name="teamId" required><br>
+    
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" required><br>
+    
+    <label for="requirement">Requirement:</label>
+    <input type="text" id="requirement" name="requirement" required><br>
+    
+    <label for="votes">Votes:</label>
+    <input type="number" id="votes" name="votes" required><br>
+    
+    <input type="submit" value="Add Performance Item">
+</form>
+
+<!-- Modify performance item form -->
+
+<form action="/modify-performance-item" method="post" class="form-inline">
+    <h3>Modify a Performance Record</h3>
+    <br>
+    <label for="performanceId">Performance ID:</label>
+    <input type="number" id="performanceId" name="performanceId" required><br>
+    
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="duration" required><br>
+    
+    <label for="studentId">Student ID:</label>
+    <input type="number" id="studentId" name="studentId" required><br>
+    
+    <label for="teamId">Team ID:</label>
+    <input type="number" id="teamId" name="teamId" required><br>
+    
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" required><br>
+    
+    <label for="requirement">Requirement:</label>
+    <input type="text" id="requirement" name="requirement" required><br>
+    
+    <label for="votes">Votes:</label>
+    <input type="number" id="votes" name="votes" required><br>
+    
+    <input type="submit" value="Modify Performance Item">
+</form>
+</div>
+    <!-- Main content -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="col1">
+
+            <h3>Links</h3>
+            <a href="/">Home</a>
+            <a href="/About-us">About Us</a>
+        </div>
+
+        <div class="col2">
+            <h3>SUBSCRIBE</h3>
+            <form>
+                <input type="Email" name="Your Email Address" placeholder="Your Email Address" required align="center">
+                <br>
+                <button>Subscribe Now!</button>
+            </form>
+        </div>
+
+
+        <div class="col3">
+            <h3>Contact us</h3>
+            <p>Phone : 051-125892003</p>
+            <p>
+                Address : H11 Fast university  <br>
+                Islamabad
+            </p>
+
+            <div class="mid"></div>
+            <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+
+
+    <!-- Footer -->
+</body>
+</html>
